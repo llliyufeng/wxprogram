@@ -1,0 +1,4 @@
+<view class="search_row">
+  <input placeholder="请您输入内容" />
+  <button>???</button>
+</view>

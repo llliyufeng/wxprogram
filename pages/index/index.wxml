@@ -1,0 +1,33 @@
+<view class="mall_index">
+  <!-- 搜索框开始 -->
+  <SearchInput></SearchInput>
+  <!-- 轮播图开始 -->
+  <view class="swiper_index">
+    <swiper indicator-dots autoplay interval="1000" circular>
+      <swiper-item wx:for="{{swiperList}}" wx:key="{{swiperList.goods_id}}">
+        <image mode="widthFix" src="{{item.image_src}}" />
+      </swiper-item>
+    </swiper>
+    <!-- 轮播图结束 -->
+  </view>
+  <!-- 导航开始 -->
+  <view class="nav_index">
+    <navigator wx:for="{{navList}}" wx:key="{{navList.name}}" open-type="navigate">
+      <image src="{{item.image_src}}" mode="widthFix"></image>
+    </navigator>
+  </view>
+  <!-- 楼层开始 -->
+  <view class="floor_index">
+    <view class="floor_group" wx:for="{{floorList}}" wx:key="floor_title" wx:for-item="item1" wx:for-index="index1">
+      <view class="floor_title">
+        <image src="{{item1.floor_title.image_src}}" mode="widthFix"></image>
+      </view>
+      <view class="floor_list">
+        <navigator wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="name">
+          <!-- 因为第一张图widthFix匹配、后四张图与widthFix这个属性不匹配 所以要设置一个判断 scaleToFill为匹配盒子的宽高 -->
+          <image src="{{item2.image_src}}" mode="{{index2 === 0 ? 'widthFix':'scaleToFill'}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

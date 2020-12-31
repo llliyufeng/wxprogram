@@ -1,0 +1,21 @@
+page {
+  background-color: #dedede;
+  padding: 20rpx;
+}
+page .search_row {
+  display: flex;
+  height: 90rpx;
+}
+page .search_row input {
+  background-color: #fff;
+  flex: 1;
+  height: 80%;
+}
+page .search_row buttton {
+  width: 110rpx;
+  height: 100%;
+  font-size: 30rpx;
+  margin: 0 10rpx;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.less"],"names":[],"mappings":"AAAA,OACE,MAAA,IACA,WAAA","file":"index.min.css","sourcesContent":["button {\r\n  width: 70%;\r\n  margin-top: 40rpx;\r\n}\r\n"]}

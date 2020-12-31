@@ -1,0 +1,52 @@
+page {
+  height: 100%;
+  .Cart {
+    height: 100%;
+    .CartList {
+      height: ~"calc(100vh - 90rpx)";
+      display: flex;
+      .left {
+        flex: 2;
+        .menu_item {
+          height: 80rpx;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 36rpx;
+        }
+        .active {
+          color: var(--themeColor);
+          border-left: 5px solid currentColor;
+        }
+      }
+      .right {
+        flex: 5;
+        font-size: 32rpx;
+        .menu_group {
+          .goods_title {
+            height: 80rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .text {
+              color: #ccc;
+              padding: 0 10px;
+            }
+          }
+          .goods_list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            navigator {
+              width: 33.33%;
+              text-align: center;
+              image {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

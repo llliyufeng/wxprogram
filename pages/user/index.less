@@ -1,0 +1,115 @@
+.user_info_wrap {
+  // 视口
+  height: 45vh;
+  background-color: var(--themeColor);
+  overflow: hidden;
+  position: relative;
+  .user_image_wrap {
+    position: relative;
+    .user_bg {
+      height: 47vh;
+      filter: blur(10rpx);
+    }
+    .user_info {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 20%;
+      text-align: center;
+      .user_icon {
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+      .user_name {
+        color: white;
+        margin-top: 40rpx;
+        font-size: 40rpx;
+      }
+    }
+  }
+  .user_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    border: 1px solid rgb(141, 240, 133);
+    color: rgb(146, 226, 139);
+    font-size: 38rpx;
+    padding: 30rpx;
+    border-radius: 10rpx;
+  }
+}
+.user_content {
+  position: relative;
+  .user_main {
+    padding-bottom: 100rpx;
+
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30rpx;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    .history_wrap {
+      background-color: #fff;
+      display: flex;
+      navigator {
+        flex: 1;
+        text-align: center;
+        padding: 10rpx 0;
+        .history_num {
+          color: var(--themeColor);
+        }
+        .history_name {
+        }
+      }
+    }
+    .orders_wrap {
+      background-color: #fff;
+      margin-top: 20rpx;
+      .orders_title {
+        padding: 15rpx;
+        border-bottom: 1rpx solid #ccc;
+      }
+      .orders_content {
+        display: flex;
+
+        navigator {
+          padding: 15rpx 0;
+          flex: 1;
+          text-align: center;
+          .iconfont {
+            color: var(--themeColor);
+            font-size: 40rpx;
+          }
+          .order_name {
+          }
+        }
+      }
+    }
+    .address_wrap {
+      background-color: #fff;
+      margin-top: 20rpx;
+      padding: 20rpx;
+    }
+    .app_info_wrap {
+      background-color: #fff;
+      margin-top: 20rpx;
+      .app_info_item {
+        padding: 20rpx;
+        border-bottom: 1rpx solid #ccc;
+      }
+      .contact {
+        display: flex;
+        // 设置一下对齐方式 两边对齐
+        justify-content: space-between;
+      }
+    }
+    .recommend_wrap {
+      background-color: #fff;
+      margin-top: 20rpx;
+      padding: 20rpx;
+    }
+  }
+}

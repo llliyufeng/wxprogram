@@ -1,0 +1,111 @@
+page {
+  padding-bottom: 90rpx;
+}
+.revice_address_row {
+  font-size: 32rpx;
+
+  .user_info_row {
+    display: flex;
+    padding: 15rpx;
+    .user_Info {
+      flex: 6;
+    }
+    .user_Phone {
+      flex: 3;
+      text-align: right;
+    }
+  }
+}
+.cart_content {
+  .cart_title {
+    padding: 20rpx;
+    font-size: 42rpx;
+    font-weight: 600;
+    color: var(--themeColor);
+    border-top: 1rpx solid currentColor;
+    border-bottom: 1rpx solid currentColor;
+  }
+  .cart_main {
+    .cart_item {
+      display: flex;
+      padding: 10rpx;
+      border-bottom: 1rpx solid #ccc;
+
+      .cart_image {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        image {
+          width: 80%;
+        }
+      }
+    }
+    .cart_info {
+      flex: 4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .goods_name {
+        // 设置余出...效果
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        color: #666;
+      }
+      .goods_price_wrap {
+        display: flex;
+        // 设置主轴两边放置
+        justify-content: space-between;
+        .goods_price {
+          color: var(--themeColor);
+          font-size: 32rpx;
+        }
+
+        .cart_num_tool {
+          display: flex;
+
+          .goods_num {
+            width: 55rpx;
+            height: 55rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+.footer_tool {
+  position: fixed;
+  bottom: 10rpx;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+
+  .total_price {
+    flex: 5;
+    text-align: right;
+    padding-right: 15rpx;
+
+    .total_price_text {
+      color: var(--themeColor);
+      font-size: 34rpx;
+      font-weight: 600;
+    }
+  }
+  .order_pay {
+    flex: 3;
+    background-color: var(--themeColor);
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
