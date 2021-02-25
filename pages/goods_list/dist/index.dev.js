@@ -80,7 +80,7 @@ Page({
             total = res.total;
             this.totalPage = Math.ceil(total / this.Queryparams.pagesize);
             this.setData({
-              // 拼接的数组旧+新
+              // 拼接的数组旧+新1
               goodList: [].concat(_toConsumableArray(this.data.goodList), _toConsumableArray(res.goods))
             }); // 关闭下拉刷新
 

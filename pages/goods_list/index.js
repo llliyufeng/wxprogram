@@ -59,7 +59,7 @@ Page({
     let total = res.total;
     this.totalPage = Math.ceil(total / this.Queryparams.pagesize);
     this.setData({
-      // 拼接的数组旧+新
+      // 拼接的数组旧+新1
       goodList: [...this.data.goodList, ...res.goods],
     });
     // 关闭下拉刷新
